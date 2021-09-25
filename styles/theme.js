@@ -8,7 +8,7 @@ export default {
     primary: primaryColor,
     accent1: "#11315b",
     dark: "#0C101A",
-    dark1: "#59595A",
+    dark1: "#2f323a",
     dark2: "#69696a",
     light: "#FFFFFF",
     light1: "#D4CCC8",

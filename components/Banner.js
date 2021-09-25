@@ -13,7 +13,7 @@ const Banner = (props) => {
     >
       <Flex flexBasis={["50%"]} flexDirection="column">
         <Heading fontSize={[7]} fontWeight={[700]} marginBottom={[3]}>
-          Own your own Dashing NFT
+          Your own Dashing NFT
         </Heading>
         <Heading fontSize={[5]} fontWeight={[400]} color={colors.light1}>
           500 Diver Dolphins are having fun on the solana beach, splashing in

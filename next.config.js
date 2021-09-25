@@ -41,7 +41,7 @@ const moduleExports = withTM({
   // reactStrictMode: true,
   // webpack5: true,
   images: {
-    domains: [],
+    domains: ["source.unsplash.com"],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {

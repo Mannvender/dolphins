@@ -10,7 +10,14 @@ const MintSolana = dynamic(() => import("components/mint/MintSolana"), {
 const Mint = ({ date, dateOptions }) => {
   const { colors } = useTheme();
   return (
-    <Box marginTop={[5]} pt={[5]} pb={[6]}>
+    <Box
+      marginTop={[5]}
+      pt={[6]}
+      pb={[6]}
+      sx={{
+        background: `linear-gradient(90deg, ${colors.accent1} 10%, ${colors.primary} 100%)`,
+      }}
+    >
       <Flex
         maxWidth={["1024px"]}
         margin={["0 auto"]}

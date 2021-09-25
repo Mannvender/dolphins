@@ -9,7 +9,13 @@ const StyledSpan = styled.span`
 const Quote = () => {
   const { colors } = useTheme();
   return (
-    <Box backgroundColor={colors.accent1} marginTop={[6]} py={[5]}>
+    <Box
+      sx={{
+        background: `linear-gradient(90deg, ${colors.accent1} 10%, ${colors.primary} 100%)`,
+      }}
+      marginTop={[6]}
+      py={[5]}
+    >
       <Flex
         maxWidth={["1024px"]}
         margin={["0 auto"]}

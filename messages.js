@@ -2,27 +2,21 @@ export const DEFAULT_ERROR_MESSAGE =
   "Something went wrong! We are looking into it.";
 
 export const ROADMAP = [
-  { when: "10", what: "10 people get Baskin Robbins.", icebergWidth: "36%" },
-  { when: "20", what: "Icedrops.", icebergWidth: "45%" },
   {
-    when: "40",
-    what: "Sue people who minted yetis cunning foxes & chill frogs but didn't mint us.",
-    icebergWidth: "100%",
+    when: "25",
+    what: "Airdrops to dolphin holders",
   },
   {
-    when: "60",
-    what: "Collab with other projects.",
-    icebergWidth: "63%",
+    when: "50",
+    what: "Collabs with other projects",
   },
   {
-    when: "80",
-    what: "Icedrops, keeps on melting.",
-    icebergWidth: "65%",
+    when: "75",
+    what: "Raffling sol to our dolphin gang",
   },
   {
     when: "100",
-    what: "Begin our journey to 1ETH",
-    icebergWidth: "70%",
+    what: "Pay steven spielberg to make another jaws movie to smear sharks",
   },
 ];
 

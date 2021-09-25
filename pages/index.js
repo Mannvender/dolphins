@@ -7,6 +7,7 @@ import Footer from "components/Footer";
 import Banner from "components/Banner";
 import Quote from "components/Quote";
 import Mint from "components/Mint";
+import Roadmap from "components/Roadmap";
 import { MINT_DATE, DATE_OPTIONS } from "messages";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
             <Banner />
           </Flex>
           <Quote />
+          <Roadmap />
           <Mint date={MINT_DATE} dateOptions={DATE_OPTIONS} />
         </Box>
         <Footer />
