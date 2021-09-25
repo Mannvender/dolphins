@@ -1,30 +1,28 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
+export const buttonCss = css`
+  border: none;
+  font-weight: 600;
+  color: ${(props) => props.theme.colors.light};
+  background-color: ${(props) => props.theme.colors.accent2};
+  min-width: 264px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 2rem 3rem;
+  pointer-events: auto;
+  cursor: pointer;
+  margin-bottom: 32px;
+  :hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+  }
+`;
 const StyledButton = styled.button`
+  ${buttonCss}
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 64px;
-  border: 1px solid ${(props) => props.theme.colors.dark1};
-  height: 40px;
-  /* background-color: ${(props) =>
-    props.disabled ? props.theme.colors.dark2 : props.bgColor}; */
-  color: ${(props) => props.color};
-  cursor: pointer;
-  padding: 8px 24px;
-  font-size: 1rem;
-  transition: background-color 0.4s ease-in-out;
-  background-image: radial-gradient(
-    ${(props) => props.theme.colors.dark1} 2px,
-    ${(props) => props.theme.colors.dark2} 1px
-  );
-  background-size: calc(2 * 2px) calc(2 * 2px);
-  &:hover {
-    color: ${(props) => props.hoverColor || props.theme.colors.light};
-  }
-  @media (min-width: 1024px) {
-    font-size: 1.1rem;
-  }
+  justify-content: space-around;
+  height: 50px;
 `;
 
 export default StyledButton;

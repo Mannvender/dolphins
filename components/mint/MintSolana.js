@@ -1,4 +1,4 @@
-import { Box, Heading, Flex } from "rebass";
+import { Box, Heading, Flex, Text } from "rebass";
 import { useState, useMemo, useEffect } from "react";
 import styled, { useTheme, css, createGlobalStyle } from "styled-components";
 import { toast } from "react-toastify";
@@ -10,8 +10,9 @@ import Input from "../Input";
 import Button from "../Button";
 import { DEFAULT_ERROR_MESSAGE } from "messages";
 import { LinkExternal as Link } from "../Links";
+import { buttonCss } from "components/Button";
 
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { WalletMultiButton as WalletMultiButtonBase } from "@solana/wallet-adapter-react-ui";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import * as anchor from "@project-serum/anchor";
@@ -52,6 +53,9 @@ export const IceCss = css`
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   z-index: 1;
   position: relative;
+`;
+const WalletMultiButton = styled(WalletMultiButtonBase)`
+  ${buttonCss}
 `;
 
 const MintSection = ({ ethAddress }) => {
@@ -174,15 +178,13 @@ const MintSection = ({ ethAddress }) => {
   // };
 
   return (
-    <Box p={[3]}>
-      <Flex justifyContent="center" mb={[3]}>
+    <Box p={[3]} mt={[4]}>
+      <Flex justifyContent="center" textAlign="center" mb={[3]}>
         <main>
           {wallet.connected && (
-            <p>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
-          )}
-
-          {wallet.connected && (
-            <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
+            <Text fontSize={[4]} color={colors.light1} mb={[3]}>
+              Balance: {(balance || 0).toLocaleString()} SOL
+            </Text>
           )}
 
           <WalletMultiButton />
