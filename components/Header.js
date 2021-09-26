@@ -64,17 +64,13 @@ const Header = () => {
         >
           <Link
             marginRight={[4]}
-            href="https://discord.gg/bbCgXVJYwj"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
             <SiDiscord fill={colors.light} size="36px" />
           </Link>
-          <Link
-            href="https://twitter.com/PolarPenguinNFT"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <FaTwitter fill={colors.light} size="36px" />
           </Link>
         </Flex>
