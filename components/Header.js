@@ -60,7 +60,7 @@ const Header = () => {
           flexBasis={["50%"]}
           justifyContent="flex-end"
           alignItems="center"
-          px={[3]}
+          pl={[3]}
         >
           <Link
             marginRight={[4]}

@@ -16,12 +16,13 @@ const Roadmap = () => {
       >
         <Flex flexBasis="40%" sx={{ position: "relative" }}>
           <Card
-            width={[256, 330]}
+            width={[256, 340]}
             mx="auto"
             sx={{
               overflow: "hidden",
               borderRadius: "12px",
             }}
+            ml={[0]}
           >
             <Box sx={{ position: "relative" }} height="300px">
               <Image
@@ -71,9 +72,9 @@ const Roadmap = () => {
             Insanely low fees
           </Heading>
           <Heading fontSize={[5]} fontWeight={[400]} color={colors.light1}>
-            With an average minting cost of less than a dollar, and no
-            transaction fee, Dolphins are shifting the balance of power back to
-            NFT enthusiasts.
+            With an average transaction fee of less than a dollar, and instant
+            reveal, Dolphins are shifting the balance of power back to NFT
+            enthusiasts.
           </Heading>
           <Flex mt={[5]}>
             {ROADMAP.map((step) => (
